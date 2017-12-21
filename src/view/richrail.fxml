@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox fx:id="vbox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RichRailController">
+   <children>
+      <TabPane fx:id="richrailMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="richrailTabVisual" text="RichRail">
+               <content>
+                  <fx:include source="tab/richrail_anchor_visual.fxml" />
+               </content>
+          </Tab>
+            <Tab fx:id="richrailTabConsole" text="Console">
+               <content>
+                  <fx:include source="tab/richrail_anchor_console.fxml" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
+

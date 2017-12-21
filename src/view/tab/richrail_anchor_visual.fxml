@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RichRailController">
+   <children>
+      <SplitPane dividerPositions="0.804920913884007" orientation="VERTICAL" prefHeight="571.0" prefWidth="800.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ChoiceBox fx:id="trainSelectDropdown" layoutX="40.0" layoutY="40.0" prefHeight="25.0" prefWidth="250.0" />
+                  <TextField fx:id="trainInputField" layoutX="40.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" />
+                  <Button fx:id="trainCreateButton" layoutX="292.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Create new train" />
+                  <Button fx:id="trainSelectButton" layoutX="292.0" layoutY="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="Select" />
+                  <Button fx:id="trainDeleteButton" layoutX="348.0" layoutY="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="Delete" />
+                  <ChoiceBox fx:id="wagonSelectDropdown" layoutX="40.0" layoutY="70.0" prefHeight="25.0" prefWidth="250.0" />
+                  <Button fx:id="wagonDeleteButton" layoutX="348.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="Delete" />
+                  <Button fx:id="wagonAddButton" layoutX="292.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="Add" />
+                  <TextField fx:id="trainDetailsField" layoutX="500.0" layoutY="40.0" prefHeight="25.0" prefWidth="250.0" text="&lt;traindetails&gt;" />
+                  <TextField fx:id="wagonDetailsField" layoutX="500.0" layoutY="70.0" prefHeight="25.0" prefWidth="250.0" text="&lt;wagondetails&gt;" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</fx:root>
